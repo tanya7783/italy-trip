@@ -1,19 +1,23 @@
 document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();  
+    event.preventDefault(); // Запобігає перезавантаженню сторінки при надсиланні
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
+
     if (name && email && message) {
         document.getElementById("response-message").innerHTML = `<p>Дякуємо, ${name}! Ваше повідомлення було надіслано.</p>`;
     } else {
         document.getElementById("response-message").innerHTML = "<p>Будь ласка, заповніть всі поля.</p>";
     }
 });
+
 let slideIndex = 0;
+
 function showSlide(index) {
     const slides = document.querySelectorAll('.slider-image');
     if (index >= slides.length) slideIndex = 0;
     if (index < 0) slideIndex = slides.length - 1;
+
     slides.forEach(slide => slide.style.display = 'none');
     slides[slideIndex].style.display = 'block';
 }
