@@ -3,33 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Контакти">
-    <title>Контакти</title>
+    <title>Контакти | Подорож до Італії</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Контакти</h1>
+        <a href="index.html"><h1>Подорож до Італії</h1></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про подорож</a></li>
+                <li><a href="cities.html">Міста Італії</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="map.html">Наші локації</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section>
-        <h2>Зв'яжіться з нами</h2>
-        <form id="contact-form">
-            <label for="name">Ваше ім'я:</label>
-            <input type="text" id="name" name="name" required>
+    <main class="content-wrapper">
+        <div class="about-trip-wrapper">
+            <div class="about-trip-item contact-info">
+                <h2>Як з нами зв'язатися?</h2>
+                <p>Якщо у вас є запитання щодо подорожі, маршрутів або порад — не соромтеся писати або дзвонити нам!</p>
 
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" name="email" required>
+                <ul>
+                    <li><strong>Адреса:</strong> вул. Мандрівна, 5, Київ, Україна</li>
+                    <li><strong>Телефон:</strong> +38 (067) 123-45-67</li>
+                    <li><strong>Email:</strong> travel.italy@example.com</li>
+                    <li><strong>Години роботи:</strong> Пн-Пт: 9:00 – 18:00, Сб: 10:00 – 14:00</li>
+                    <li><strong>Ми в соцмережах:</strong>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Telegram</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
 
-            <label for="message">Повідомлення:</label>
-            <textarea id="message" name="message" required></textarea>
+            <div class="about-trip-item contact-form">
+                <h2>Напишіть нам повідомлення</h2>
+                <form>
+                    <label for="name">Ім’я:</label>
+                    <input type="text" id="name" name="name" required>
 
-            <button type="submit">Відправити</button>
-        </form>
-    </section>
+                    <label for="email">Електронна пошта:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Тема:</label>
+                    <input type="text" id="subject" name="subject">
+
+                    <label for="message">Повідомлення:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Надіслати</button>
+                </form>
+            </div>
+
+            <div class="about-trip-item contact-map">
+                <h2>Наше розташування</h2>
+                <p>Ми знаходимось у центрі Києва — зручно добиратися громадським транспортом або пішки.</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.863242319365!2d30.523400715731127!3d50.450100979475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce52b25a9c0f%3A0x2d146ddc2ea4cfc4!2z0JrRg9C30LDRgNCw0Y8g0L_RgC4sIDUsINCa0LjQtdCyLCDQmtC40YDQvtCy0YHQutCw0Y8sIDAxMDAw!5e0!3m2!1suk!2sua!4v1714652994962"
+                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Подорож до Італії</p>
+        <p>© 2025 Подорож до Італії. Усі права захищено.</p>
     </footer>
 </body>
 </html>
